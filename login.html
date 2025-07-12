@@ -1,47 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Document</title>
     <style>
-.bg-box{
-padding: 0px;
-margin: 0px;
-box-sizing: border-box;
-}
-.body{
-height:10px;
-display:flex;
-align-items: center;
-justify-content:center;
-}
-.container{
-    display: flex;
-    padding: 100px;
-    border: 15px dashed blue;
-    border-radius: 5px;
-}
-.iput{
-    margin: 16px;
-    height:100px;
-    padding:10px;
-}
-.button{
-    height: 35px;
-    margin:5px;
-    background-color: aqua;
-    border: none;
-    border-radius: 5px;
-    color: #333;
-}
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+            height: 100px;
+            justify-content: center;
+            align-items: flex-start;
+            display: flex;
+        }
 
+        .login-box {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #aaa;
+            width: 300px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+
+        }
+
+        input [type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px;
+            border: 1px dashed black;
+            border-radius: 1px;
+        }
+
+        button {
+
+            width: 100%;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: aqua;
+        }
     </style>
 </head>
+
 <body>
-   <div class="container">
- <input type="email" placeholder="email">
- <input type="password" placeholder="password">
- <button>Login</button>
-   </div> 
+    <div class="login-box">
+        <h2>Login</h2>
+        <label for="username">Username:</label><br>
+        <input type="text" placeholder="username" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" placeholder="password" required><br>
+
+        <div>
+            <button>Login</button>
+        </div>
 
 </body>
+
 </html>
