@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: Arial;
+
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 15px;
+            margin-bottom: 10px
+        }
+
+        .login-box {
+            height: 300px;
+            width: 400px;
+            background-color: white;
+            padding: 30px;
+            margin: 20px;
+            border-radius: 7px;
+            text-align: left;
+            box-shadow: 0 0 10px #3aa;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            color: cornsilk;
+            border-radius: 7px;
+            font-size: 2px;
+            margin-top: 6px;
+            margin-bottom: 8px;
+        }
+
+        button {
+            background-color: pink;
+            color: antiquewhite;
+            border-radius: 7px dashed pink;
+            cursor: pointer;
+            margin-top: 15px;
+            margin-bottom: 10px;
+
+        }
+
+        button:hover {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-box">
+        <h2>Login</h2>
+        <label for="email">Email:</label><br>
+        <input type="email" placeholder="email">
+        <label for="password">password:</label><br>
+        <input type="password" placeholder="password">
+        <button>Login</button>
+    </div>
+
+</body>
+
+</html>
