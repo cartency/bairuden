@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dashboard</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px.1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: pink;
+            padding: 20px;
+            border-radius: 12px dashed black;
+            box-shadow: 2px 4px 10px gray;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .printing {
+            background-color: pink;
+            color: lightskyblue;
+            font-weight: bold;
+        }
+
+        .cutting {
+            background-color: pink;
+            color: blue;
+            font-weight: bold;
+        }
+
+        .Sewing Dispatched {
+            background-color: pink;
+            color: darkturquoise;
+        }
+
+        .Sewing Received {
+            background-color: pink;
+            color: black;
+        }
+
+        .Sewing Payable {
+            background-color: pink;
+            color: skyblue;
+            font-weight: bold;
+            border-left: 5px dashed red;
+
+            .expense Today {
+                background-color: pink;
+                color: soft black;
+                font-size: 18px;
+            }
+
+            .Staff Attendence {
+                background-color: pink;
+                color: sof blue;
+                border: 10px solid red;
+                font-weight: 600;
+            }
+    </style>
+</head>
+
+<body>
+    <h2>Dashboard</h2>
+    <div class="dashboard">
+        <div class="card printing">
+            <h3>Printing</h3>
+            <p>11 pcs</p>
+        </div>
+        <div class="card cutting">
+            <h3>Cutting</h3>
+            <p>13 pcs</p>
+        </div>
+        
+        <div class="card sewing-dispatched">
+            <h3>Sewing Dispatched</h3>
+            <p>42 pcs</p>
+        </div>
+        <div class="card sewing-received">
+            <h3>Sewing Received</h3>
+            <p>42 pcs</p>
+        </div>
+        <div class="card sewing-payable">
+            <h3>Sewing Payable</h3>
+            <p>42</p>
+        </div>
+        <div class="card expense-today">
+            <h3>Expense Today</h3>
+            <p>25,000</p>
+        </div>
+        <div class="card staff-attendance">
+            <h3>Staff Attendence</h3>
+            <p>28</p>
+        </div>
+    </div>
+</body>
+
+</html>
