@@ -17,17 +17,18 @@
 
         .dashboard {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px.1fr));
+            grid-template-columns: repeat(4,1fr);
             gap: 20px;
         }
 
         .card {
-            background-color: pink;
+            background-color: white;
             padding: 20px;
-            border-radius: 12px dashed black;
-            box-shadow: 2px 4px 10px gray;
+            box-shadow: 2px 4px 5px gray;
             text-align: center;
             transition: 0.3s;
+            border:2px solid skyblue ;
+            border-radius:10px ;
         }
 
         .card:hover {
@@ -35,41 +36,40 @@
         }
 
         .printing {
-            background-color: pink;
-            color: lightskyblue;
-            font-weight: bold;
+            background-color: white;
+            color:blue;
+            font-weight:normal;
         }
 
         .cutting {
-            background-color: pink;
+            background-color: white;
             color: blue;
             font-weight: bold;
         }
 
-        .Sewing-Dispatched {
-            background-color: pink;
-            color: darkturquoise;
+        .sewing-dispatched {
+            background-color:white;
+            color: blue;
         }
 
-        .Sewing-Received {
-            background-color: pink;
+        .sewing-received {
+            background-color:white;
             color: black;
         }
 
-        .Sewing-Payable {
-            background-color: pink;
-            color: skyblue;
+        .sewing-payable {
+            background-color:white;
+            color:blue;
             font-weight: bold;
-            border-left: 5px dashed red;
-
-            .expense-Today {
-                background-color: pink;
+        }
+            .expense-today {
+                background-color: white;
                 color: soft black;
                 font-size: 18px;
             }
 
-            .Staff-Attendence {
-                background-color: pink;
+            .staff-attendence {
+                background-color:white;
                 color: sof blue;
                 border: 10px solid red;
                 font-weight: 600;
